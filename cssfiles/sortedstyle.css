@@ -1,0 +1,525 @@
+		:root{
+			--gra: linear-gradient(45deg, rgb(255, 0, 0), rgb(151, 59, 64));
+		}
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		header {
+			width: 100%;
+			height: auto;
+		}
+		.firstheader .header1 {
+			width: 100%;
+			height: 160px;
+			background:black;
+		
+		}
+		.firstheader .logoandicon{
+			width: 95%;
+			height: 55%;
+			margin: 0 auto;
+		}
+		
+		.firstheader .logo {
+			width: 25%;
+			height: 85%;
+			margin-top: 1.5%;
+			float: left;
+		}
+		.firstheader .logo img {
+			height: 100%;
+			width: 100%;
+		}
+		
+		.firstheader .icon {
+			width: 30%;
+			height: 100%;
+			float: right;
+		}
+		.firstheader .icon a {
+			font-size: 23px;
+			margin-bottom: 30px;
+			color: maroon;
+			text-decoration: none;
+			margin-left: 95px;
+			position: relative;
+			top: 35px;
+		
+		}
+		@media screen and (max-width: 1234px) {
+			.icon {
+				width: 50%;
+				height: 100%;
+				float: right;
+			}
+			.icon a {
+				font-size: 25px;
+				margin-bottom: 30px;
+				color: maroon;
+				text-decoration: none;
+				margin-left: 15%;
+				position: relative;
+				top: 10px;
+			
+			}
+		}
+		
+		
+		@media screen and (max-width: 535px) {
+			.icon {
+				width: 50%;
+				height: 100%;
+				float: right;
+			}
+			.icon a {
+				font-size: 20px;
+				margin-bottom: 30px;
+				color: maroon;
+				text-decoration: none;
+				margin-left: 0;
+				position: relative;
+				top: 10px;
+			
+			}
+		}
+		
+		.firstheader .headernav{
+			width: 100%;
+			height: 45%;
+			background: black;
+			margin: 0 auto;
+		}
+		.firstheader .nav{
+			width: 75%;
+			height: 100%;
+			float: left;
+		}
+		.firstheader ul {
+			padding: 0;
+		}
+		.firstheader .nav ul li {
+			list-style: none;
+			display: inline-block;
+			margin-left: 28px;
+			text-align: center;
+			line-height: 30px;
+		
+		}
+		.firstheader .nav ul li a {
+			text-decoration: none;
+			font-size: 100%;
+			color: maroon;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+		}
+		@media screen and (max-width: 950px){
+			.nav ul li a {
+				text-decoration: none;
+				font-size: 70%;
+				color: maroon;
+				text-transform: uppercase;
+				padding-bottom: 15px;
+			}
+		}
+		@media screen and (max-width: 733px){
+		
+			.nav ul li {
+				margin-left: 8px;
+			}
+		
+			.nav ul li a {
+				text-decoration: none;
+				font-size: 60%;
+				color: maroon;
+				text-transform: uppercase;
+				padding-bottom: 15px;
+			}
+		}
+		
+		@media screen and (max-width: 530px){
+		
+			.nav ul li {
+				margin-left: 2px;
+			}
+		
+			.nav ul li a {
+				text-decoration: none;
+				font-size: 12px;
+				color: maroon;
+				text-transform: uppercase;
+				padding-bottom: 15px;
+			}
+		}
+		.nav ul li a:hover {
+			border-bottom : 2px solid maroon;
+		}
+		
+		.searchbutton {
+			width: 25%;
+			height: 50%;
+			float: right;
+		}
+		
+		.searchbutton input[type="text"] {
+			padding: 5px 30px;
+			margin-left: 20px;
+			padding-left: 2px;
+			background: black;
+			border: 1px solid white;
+			margin-top: 30px;
+			color: maroon;
+		}
+		.searchbutton a {
+			color: maroon;
+			font-size: 100%;
+			margin-left: 10px;
+			position: relative;
+			top: 5px;
+		}
+		@media screen and (max-width: 1070px) {
+			.searchbutton {
+				width: 25%;
+				height: 50%;
+				float: right;
+			}
+			.searchbutton input[type="text"] {
+				width: 50%;
+				padding: 5px 30px;
+				margin-left: 20px;
+				padding-left: 2px;
+				background: black;
+				border: 1px solid white;
+				margin-top: 30px;
+				color: maroon;
+			}
+			.searchbutton a {
+				color: maroon;
+				margin-top: 5px;
+			}
+		}
+		
+		
+		@media screen and (max-width: 660px) {
+			.searchbutton {
+				width: 25%;
+				height: 50%;
+				float: right;
+				position: relative;
+			}
+			.searchbutton input[type="text"] {
+				width: 50%;
+				padding: 5px 30px;
+				margin-left: 20px;
+				padding-left: 2px;
+				background: black;
+				border: 1px solid white;
+				margin-top: 30px;
+				color: maroon;
+			}
+			.searchbutton a {
+				color: maroon;
+				margin-top: 5px;
+				position: absolute;
+				top:30px;
+				right:0;
+			}
+		}
+		
+		.firstheader .searchbutton input[type="text"]::placeholder {
+			padding-right:0px;
+			font-size: 15px;
+			color:maroon;
+		}
+		main{
+			width: 98%;
+			background:rgb(240, 236, 236);
+			margin: 60px auto;
+			font-family: sans-serif;
+		}
+		header{
+			width: 100%;
+			height: 100px;
+			border-bottom: 2px solid maroon;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		header ul li{
+			list-style: none;
+			padding: 20px;
+			margin: 10px;
+			float: left;
+			font-size: 20px;
+			border-radius: 35px;
+			/*background: red;*/
+
+		}
+		header ul li a{
+			color: inherit;
+			text-decoration: none;
+		}
+		header ul li.active{
+			background: var(--gra);
+		}
+		header ul li.active a{
+			color: rgb(184, 123, 123);
+			font-weight: bold;
+		}
+		.filter-condition{
+			padding: 20px;
+			height: 100px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.filter-condition select{
+			width: 120px;
+		    padding: 0 0 0 10px;
+		    border: none;
+		    outline: none;
+		    font-weight: bold;
+		    color:maroon;
+		    background: transparent;
+		    cursor: pointer;
+		}
+		.product-field{
+			padding: 40px 20px;
+		}
+		.product-field ul{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.product-field ul li{
+			list-style: none;
+			width: 23.4%;
+			height: 400px;
+			transition: 0.5s all;
+			background:rgb(17, 16, 16);
+			border-radius: 20px;
+			padding: 10px;
+			margin: 200px 10px 0 10px;
+			position: relative;
+		}
+		picture{
+			background: rgb(48, 44, 44);
+			padding: 5px;
+		    position: absolute;
+		    right: 0;
+		    bottom: 41%;
+		    width: 75%;
+		    height: 85%;
+		    border-radius: 50px 20px 0 20px;
+		    transform: skewY(40deg);
+		    overflow: hidden;
+		    box-shadow: 0px 1px 0px #00000020, -1px 0px 0px rgb(54, 25, 25);
+		}
+		picture img {
+		  width: 95%;
+		  z-index: 1;
+		  transform: skewY(-40deg);
+		  padding: 25px 0 0 0;
+		}
+		.detail{
+			width: 100%;
+			height: 100%;
+		}
+		.detail .icon{
+			width: 30%;
+		    height: 55%;
+		    padding: 20px 5px;
+		}
+		.icon span{
+			background: #00000030;
+		    display: inline-block;
+		    width: 50px;
+		    height: 50px;
+		    line-height: 50px;
+		    text-align: center;
+		    padding: 0;
+		    border-radius: 50%;
+		    margin: 0 0 20px 5px;
+		    font-size: 20px;
+		    color: rgb(238, 220, 220);
+		}
+		.icon span:hover{
+			background: var(--gra);
+			cursor: pointer;
+		}
+		.detail > strong{
+			display: inherit;
+			margin: 20px;
+			font-size: 30px;
+			letter-spacing: 2px;
+			color: rgb(80, 61, 61);
+		}
+		.detail > span{
+			display: inherit;
+			padding: 0 20px;
+    		width: 80%;
+		}
+		.detail small{
+			display: inline-block;
+		    padding: 8px 20px;
+		    margin: 15px;
+		    font-weight: bold;
+		    border-radius: 6px;
+		    border: 1px solid rgb(150, 137, 137);
+		    cursor: pointer;
+		}
+		.detail small:hover{
+			    background: var(--gra);
+			    color: rgb(230, 207, 207);
+			    border-color: rgb(155, 63, 63);
+		}
+		li h4{
+		    position: absolute;
+		    right: 10px;
+		    top: 50%;
+		    font-size: 30px;
+		    color: rgb(150, 107, 107);
+		    text-shadow: 1px 1px 2px black;
+		}
+		footer{
+			bottom: 0;
+		}
+		.footer-distributed{
+			background-color:black;
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+			box-sizing: border-box;
+			width: 100%;
+			text-align: left;
+			font: bold 16px oswald;
+			padding: 55px 50px;
+			margin-top: 215px;
+		}
+		 
+		.footer-distributed .footer-left,
+		.footer-distributed .footer-center,
+		.footer-distributed .footer-right{
+			display: inline-block;
+			vertical-align: top;
+		}
+		@media screen and (max-width: 900px) {
+			.footer-distributed .footer-left,
+			.footer-distributed .footer-center,
+			.footer-distributed .footer-right{
+				display: block;
+			}
+		}
+		 
+		.footer-distributed .footer-left{
+			width: 43%;
+		}
+		 
+		 
+		.footer-distributed span{
+			color: maroon;
+		}
+		 
+		 
+		.footer-distributed {
+			color: maroon;
+			margin: 0px 0 5px;
+			padding: 0;
+			font-size: 21px;
+		}
+		 
+		.footer-distributed a{
+			display:inline-block;
+			line-height: 5;
+			text-decoration: none;
+			color:  inherit;
+		}
+		 
+		.footer-distributed .footer-mall-name{
+			color: maroon;
+			font-size: 20px;
+			font-weight: normal;
+			margin: 0;
+		}
+		 
+		.footer-distributed .footer-center{
+			width: 35%;
+		}
+		 
+		.footer-distributed .footer-center i{
+			background-color: black;
+			color: maroon;
+			font-size: 30px;
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 45px;
+			margin: 10px 15px;
+			vertical-align: middle;
+		}
+		 
+		.footer-distributed .footer-center i.fa-envelope{
+			font-size: 17px;
+			line-height: 38px;
+		}
+		 
+		.footer-distributed .footer-center p{
+			display: inline-block;
+			color: maroon;
+			vertical-align: middle;
+			margin:0;
+		}
+		 
+		.footer-distributed .footer-center p span{
+			display:block;
+			font-weight: normal;
+			font-size:14px;
+			line-height:2;
+		}
+		 
+		.footer-distributed .footer-center p a{
+			color: maroon;
+			text-decoration: none;
+		}
+		 
+		.footer-distributed .footer-right{
+			width: 20%;
+		}
+		 
+		 
+		.footer-distributed .footer-icons{
+			margin-top: 25px;
+		}
+		 
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+		
+		.fa:hover {
+			opacity: 0.7;
+		}
+		
+		.fa-facebook {
+		  background: #3B5998;
+		  color: white;
+		}
+		
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+		
+		.fa-instagram {
+		  background: #125688;
+		  color: white;
+		}
+		.fa-google {
+		  background: #dd4b39;
+		  color: white;
+		}
+		
+		
